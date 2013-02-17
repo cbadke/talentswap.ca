@@ -1,4 +1,4 @@
-﻿namespace FsWeb
+﻿namespace TalentSwap
 
 open System
 open System.Web

@@ -1,4 +1,4 @@
-﻿namespace FsWeb.Controllers
+﻿namespace TalentSwap.WebAPI.Controllers
 
 open System.Web
 open System.Web.Mvc
