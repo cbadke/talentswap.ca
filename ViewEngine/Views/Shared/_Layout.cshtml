@@ -9,21 +9,16 @@
 </head>
 
 <body>
-    <!--[if lt IE 9 ]> <div class="header"> <![endif]-->
-    <!--[if (gt IE 8)|!(IE)]><!--> <header> <!--<![endif]-->
+    <header>
     @Html.Partial("~/Views/Shared/_Header.cshtml")
-    <!--[if (gt IE 8)|!(IE)]><!--> </header> <!--<![endif]-->
-    <!--[if lt IE 9 ]> </div> <![endif]-->
+    </header>
 
     <div id="content">
     @RenderBody()
     </div>
 
-    <!--[if lt IE 9 ]> <div class="footer"> <![endif]-->
-    <!--[if (gt IE 8)|!(IE)]><!--> <footer> <!--<![endif]-->
+    <footer>
     @Html.Partial("~/Views/Shared/_Footer.cshtml")
-    <!--[if (gt IE 8)|!(IE)]><!--> </footer> <!--<![endif]-->
-    <!--[if lt IE 9 ]> </div> <![endif]-->
-
+    </footer>
 </body>
 </html>
