@@ -1,11 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 <html>
 <head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
 
-    @RenderSection("Head", required: false)
+    @Styles.Render("~/Content/bootstrapCss")
+
+    @RenderSection("styles", required: false)
 </head>
 
 <body>
@@ -20,5 +24,22 @@
     <footer>
     @Html.Partial("~/Views/Shared/_Footer.cshtml")
     </footer>
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            var e = document.createElement('script');
+            e.src = '@Url.Content("~/Scripts/lib/jquery-1.9.1.js")';
+                e.type = 'text/javascript';
+                document.getElementsByTagName("head")[0].appendChild(e);
+
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>
