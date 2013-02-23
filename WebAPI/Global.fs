@@ -20,8 +20,8 @@ type BundleConfig() =
         bundles.Add(ScriptBundle("~/bundles/modernizr").Include("~/Scripts/lib/modernizr-{version}.js"))
         bundles.Add(ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/lib/bootstrap.js"))
 
-        bundles.Add(StyleBundle("~/Content/bootstrapCss").Include("~/Content/bootstrap.css", "~/Content/bootstrap-responsive.css"))
-        bundles.Add(StyleBundle("~/Content/themes/base/jquery-ui").IncludeDirectory("~/Content/themes/base","*.css"))
+        bundles.Add(StyleBundle("~/Content/bootstrap/bundle").Include("~/Content/bootstrap.css", "~/Content/bootstrap-responsive.css"))
+        bundles.Add(StyleBundle("~/Content/jquery-ui/themes/base/bundle").IncludeDirectory("~/Content/themes/base","*.css"))
 
 
 type Route = { controller : string
