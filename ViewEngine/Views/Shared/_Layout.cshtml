@@ -1,6 +1,6 @@
 ﻿@using System.Web.Optimization
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>@ViewBag.Title</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
     @Html.Partial("~/Views/Shared/_Header.cshtml")
     </header>
 
-    <div id="content">
+    <div id="content" class="container">
     @RenderBody()
     </div>
 
-    <footer>
+    <footer class="container">
     @Html.Partial("~/Views/Shared/_Footer.cshtml")
     </footer>
 

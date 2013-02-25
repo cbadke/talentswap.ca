@@ -1,4 +1,53 @@
-﻿@my-color: red;
+﻿@color1: #4ca3d9;
+@color2: #3e5a8a;
+@color3: #59a37d;
+@color4: #d4e8b5;
+@color5: #eb4d4d;
+@color6: #d9bb50;
+
+@max-width: 1024px;
+@corner: 10px;
+@column-padding: 20px;
+
+header {
+  background-color: @color2;
+  color: @color5;
+  border-bottom-left-radius: @corner;
+  border-bottom-right-radius: @corner;
+  margin-bottom: @column-padding;
+}
+
+.padding-wrapper {
+  padding: @column-padding;
+}
+
+footer {
+  background-color: @color2;
+  color: @color5;
+  border-top-left-radius: @corner;
+  border-top-right-radius: @corner;
+  margin-top: @column-padding;
+}
+
 body {
-	background-color: @my-color;
+	background-color: @color3;
+}
+
+.container {
+  max-width: @max-width;
+}
+
+.column {
+  background-color: @color4;
+  border-radius: @corner;
+}
+
+.row-member {
+  float: left;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  border: 1px;
 }
