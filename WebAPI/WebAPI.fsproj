@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>WebApp</RootNamespace>
     <AssemblyName>TalentSwap.WebAPI</AssemblyName>
-    <targetframeworkversion>v4.5</targetframeworkversion>
+    <targetframeworkversion>v4.0</targetframeworkversion>
     <Name>WebAPI</Name>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
